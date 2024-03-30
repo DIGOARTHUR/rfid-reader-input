@@ -1,4 +1,4 @@
-</div>
+
  <!-------------------------------------------------->
 <!------------------------------------ PROJECT BANNER-->
  <!-------------------------------------------------->
@@ -8,13 +8,14 @@
   <!-------------------------------------------------->
  <!---------------------PROJECT ICON-->
   <!-------------------------------------------------->
-  <img src="https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/87ba639f-bd41-40a7-9638-5c3e895cf042" alt="angular-logo" width="150px" height="150px"/>
+  <img src="https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/0d2aab60-5e80-4859-8378-89b2f71e6020" alt="RFID-logo" width="150px" height="150px"/>
   <br>
    <br>
   <i>Capture your RFID reading from your React application in a practical and easy way!</i>
   <br>
 
 </p>
+
 
  <br>
    <br>
