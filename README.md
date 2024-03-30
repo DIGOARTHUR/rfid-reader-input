@@ -61,7 +61,11 @@
 
     ...
 
-    <RFIDReaderInput open={openCardReaderWindow} setOpenCardWindow={setOpenCardReaderWindow} _handleCodeCardRFID={setCodecard} />
+    <RFIDReaderInput
+      open={openCardReaderWindow}
+      setOpenCardWindow={setOpenCardReaderWindow}
+      _handleCodeCardRFID={setCodecard}
+     />
 ```
 
 ## 3. Connect your RFIDReader Device
