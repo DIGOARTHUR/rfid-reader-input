@@ -58,23 +58,29 @@
 
 ```jsx
     import { RFIDReaderInput } from 'rfid-reader-input'
-    ...
-    
-    <RFIDReaderInput open={openCardReaderWindow} setOpenCardWindow={setOpenCardReaderWindow} _handleCodeCardRFID={setCodecard} />
 
+    ...
+
+    <RFIDReaderInput open={openCardReaderWindow} setOpenCardWindow={setOpenCardReaderWindow} _handleCodeCardRFID={setCodecard} />
 ```
 
 ## 3. Connect your RFIDReader Device
 
 
- <!-------------------------------------------------->
-   <!------------------------------------SUMMARY-->
- <!-------------------------------------------------->
-- ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">About Library</a>
-- ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--library-">Library</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">Import</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">Fill Component Props</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">Code Example</a>
+ <br>
+  <br>
+   <br>
+  <br>
+
+<!-------------------------------------------------------------------->
+<!------------------------------------SUMMARY------------------------->
+<!--------------------------------------------------------------
+<p align="center">
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/tree/main#--sobre-a-aplicação">About Aplication</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--configurando-ambiente"> Library</a>&nbsp;&nbsp;&nbsp;
+</p>  
+
+------>
 
 
  <!-------------------------------------------------->
@@ -107,4 +113,17 @@
 # <img  alt="skills"  width="80" height="30" src="https://user-images.githubusercontent.com/59892368/216092858-a64d3a99-1b90-4946-b917-76eadefffb54.svg">  Library <!---write here : demonstration of the application layout.  -->
 
 ## Import
+
+```jsx
+    import { RFIDReaderInput } from 'rfid-reader-input'
+```
+
+## Component
+
+### Props
+
+
+- `id`: repository identification number. used as parameter in the key tag. This field does not need to be filled in.
+- `html_url`: repository link. Used as the link of access. This field does not need to be filled in.
+- `homepage`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
 
