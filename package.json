@@ -1,0 +1,36 @@
+{
+  "name": "rfid-reader-input",
+  "version": "1.0.0",
+  "description": "Connect your RFID reader and already have a component to capture the value.",
+  "main": "/src/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && cp package.json README.md ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIGOARTHUR/rfid-reader-input.git"
+  },
+  "keywords": [
+    "rfid",
+    "reactjs",
+    "component",
+    "input",
+    "card"
+  ],
+  "author": "@digorthur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DIGOARTHUR/rfid-reader-input/issues"
+  },
+  "homepage": "https://github.com/DIGOARTHUR/rfid-reader-input#readme",
+  "devDependencies": {
+    "@types/react": "^18.2.73",
+    "react": "^18.2.0",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "react-icons": "^5.0.1"
+  }
+}
