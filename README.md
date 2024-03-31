@@ -63,9 +63,9 @@
     ...
 
     <RFIDReaderInput
-      open={openCardReaderWindow}
-      setOpenCardWindow={setOpenCardReaderWindow}
-      _handleCodeCardRFID={setCodecard}
+      open={isOpenRFIDReaderInput}
+      onRequestClose={handleClose}
+      handleCodeCardRFID={setCodecard}
      />
 ```
 
@@ -125,10 +125,35 @@
 
 ## Component
 
-### Props
+```jsx
+     <RFIDReaderInput
+      open={isOpenRFIDReaderInput}
+      onRequestClose={handleClose}
+      handleCodeCardRFID={setCodecard}
+      textTitle='RFID Identification'
+      textBody='Hold your card'
+     />
+```
+
+#### Props
 
 
-- `id`: repository identification number. used as parameter in the key tag. This field does not need to be filled in.
-- `html_url`: repository link. Used as the link of access. This field does not need to be filled in.
-- `homepage`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
+- `open`: repository identification number. used as parameter in the key tag. This field does not need to be filled in.
+- `onRequestClose`: repository link. Used as the link of access. This field does not need to be filled in.
+- `handleCodeCardRFID`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
+- `textTitle`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
+- `textBody`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
 
+
+
+<br>
+<br>
+
+  <!-------------------------------------------------->
+<!------------------------------------CODE EXAMPLE -->
+ <!-------------------------------------------------->
+## Code Example
+
+```jsx    
+
+```
