@@ -71,7 +71,7 @@
      />
 ```
 
-## 3. Connect your RFIDReader Device
+## 3. Swipe the card on the reader
 
 <div align="center">
 
