@@ -17,6 +17,8 @@
 </p>
 
 
+
+
  <br>
    <br>
  <!-------------------------------------------------->
@@ -71,6 +73,24 @@
 
 ## 3. Connect your RFIDReader Device
 
+<div align="center">
+
+
+
+<img  alt="skills"  width="480"  src="https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/f12b6f8c-1943-4df5-9609-159e682e08ec">
+
+</div>
+
+
+## 4. Hold card
+
+<div align="center">
+
+ ![d20ac76d-b212-4730-955a-d6fa16efd887 (1) (1)](https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/1895e25c-a881-4148-be4e-a95bef1b5bd3)
+
+</div>
+  
+
 
  <br>
   <br>
@@ -94,22 +114,17 @@
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  --> 
 > This library has a React component, <RFIDReaderInput/>, to facilitate data entry while reading from your RFID device.
 
-   |                             Control your projects                     |
-| :-------------------------------------------------------------------: |
-|   ![image]() |
+
+## Advantages
+
+- Component already made. Install, import and use.
+- Void capturing digits from the keyboard.
+- Intuitive and customizable layout
 
 
-|                             Customize and represent through icons.                |
-| :--------------------------------------------------------------: |
-|   ![image]()|  
-
-  
-|                               In one place                               |
-| :-------------------------------------------------------------------: |
-|   ![image]()|
-
-
-
+  <br>
+   <br>
+  <br>
 
   <!-------------------------------------------------->
 <!------------------------------------LIBRARY -->
@@ -138,11 +153,11 @@
 #### Props
 
 
-- `open`: repository identification number. used as parameter in the key tag. This field does not need to be filled in.
-- `onRequestClose`: repository link. Used as the link of access. This field does not need to be filled in.
-- `handleCodeCardRFID`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
-- `textTitle`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
-- `textBody`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
+- `open` (_mandatory_) : repository identification number. used as parameter in the key tag. This field does not need to be filled in.
+- `onRequestClose` (_mandatory_) : repository link. Used as the link of access. This field does not need to be filled in.
+- `handleCodeCardRFID` (_mandatory_) : it's the access link to the built page, page deploy.  About / Website of your GitHub.
+- `textTitle`: (_optional_) it's the access link to the built page, page deploy.  About / Website of your GitHub.
+- `textBody`: (_optional_) it's the access link to the built page, page deploy.  About / Website of your GitHub.
 
 
 
