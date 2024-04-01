@@ -111,7 +111,7 @@
  <!------------------------------------DESCRIPTION-->
  <!-------------------------------------------------->
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  --> 
-> This library has a React component, <RFIDReaderInput/>, to facilitate data entry while reading from your RFID device.
+> This library has a React component, <RFIDReaderInput/>, to facilitate data entry while reading from your RFID device. Use in your Dashboard systems to control presence, record processes linked to people, etc.
 
 
 |                             RFIDReaderInput                             |
@@ -157,6 +157,8 @@
 
 #### Props
 
+> [!NOTE]
+> For the component to work, insert the properties correctly. You can follow the code example.
 
 - `open`  < boolean > : here a variable with the value of false or true is inserted to open the Input. (_mandatory_)
 - `onRequestClose` < ( ) => void > : receives a function to change the variable to the true state, closing the Input. (_mandatory_)
