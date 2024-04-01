@@ -160,11 +160,11 @@
 > [!NOTE]
 > For the component to work, insert the properties correctly. You can follow the code example.
 
-- `open`  < boolean > : here a variable with the value of false or true is inserted to open the Input. (_mandatory_)
-- `onRequestClose` < ( ) => void > : receives a function to change the variable to the true state, closing the Input. (_mandatory_)
-- `handleCodeCardRFID`  < (code: string) => void > : Here a function is inserted that will receive the value captured from the reading device. It can be a state function coming from the parent component, or from a contextAPI. (_mandatory_)
-- `textTitle`: < string > : text to change the card title.  (_optional_)
-- `textBody`:  < string > : text to change the card body. (_optional_)
+- (_mandatory_) `open`  < boolean > : here a variable with the value of false or true is inserted to open the Input. 
+- (_mandatory_) `onRequestClose` < ( ) => void > : receives a function to change the variable to the true state, closing the Input.
+- (_mandatory_) `handleCodeCardRFID`  < (code: string) => void > : Here a function is inserted that will receive the value captured from the reading device. It can be a state function coming from the parent component, or from a contextAPI. 
+- (_optional_) `textTitle`: < string > : text to change the card title.  
+- (_optional_) `textBody`:  < string > : text to change the card body. 
 
 
 
