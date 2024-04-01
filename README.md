@@ -18,7 +18,6 @@
 
 
 
-
  <br>
    <br>
  <!-------------------------------------------------->
@@ -113,6 +112,12 @@
  <!-------------------------------------------------->
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  --> 
 > This library has a React component, <RFIDReaderInput/>, to facilitate data entry while reading from your RFID device.
+
+
+|                             RFIDReaderInput                             |
+| :-------------------------------------------------------------------: |
+|   ![image](https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/97a940b0-21d2-4bb0-8fcc-79c8e98919b4) |
+
 
 
 ## Advantages
