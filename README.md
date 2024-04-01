@@ -158,11 +158,11 @@
 #### Props
 
 
-- `open` (_mandatory_) : repository identification number. used as parameter in the key tag. This field does not need to be filled in.
-- `onRequestClose` (_mandatory_) : repository link. Used as the link of access. This field does not need to be filled in.
-- `handleCodeCardRFID` (_mandatory_) : it's the access link to the built page, page deploy.  About / Website of your GitHub.
-- `textTitle`: (_optional_) it's the access link to the built page, page deploy.  About / Website of your GitHub.
-- `textBody`: (_optional_) it's the access link to the built page, page deploy.  About / Website of your GitHub.
+- `open` (_mandatory_) < boolean > : here a variable with the value of false or true is inserted to open the Input.
+- `onRequestClose` (_mandatory_) < () => void > : receives a function to change the variable to the true state, closing the Input.
+- `handleCodeCardRFID` (_mandatory_) < (code: string) => void > : Here a function is inserted that will receive the value captured from the reading device. It can be a state function coming from the parent component, or from a contextAPI.
+- `textTitle`: (_optional_) < string > : text to change the card title.
+- `textBody`: (_optional_) < string > : text to change the card body.
 
 
 
