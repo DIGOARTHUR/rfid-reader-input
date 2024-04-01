@@ -65,7 +65,7 @@
 
     <RFIDReaderInput
       open={isOpenRFIDReaderInput}
-      onRequestClose={handleClose}
+      onRequestClose={_handleCloseRFIDReaderInput}
       handleCodeCardRFID={setCodecard}
      />
 ```
