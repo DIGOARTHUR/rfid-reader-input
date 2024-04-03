@@ -182,7 +182,15 @@
   <!-------------------------------------------------->
 <!------------------------------------CODE EXAMPLE -->
  <!-------------------------------------------------->
-## Code Example
+# Code Example
+
+### Download Template
+
+```npm
+
+```
+
+### Code
 
 ```jsx    
 import { useState } from 'react'
@@ -231,4 +239,8 @@ function App() {
 
 export default App
 
+```
+### Reset CSS
+
+```css
 ```
