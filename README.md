@@ -262,7 +262,7 @@ export default App
 
 ```
 
-
+---
 
 **Love rfid-reader-input? Give our repo a star ⭐ ⬆️.**
 
