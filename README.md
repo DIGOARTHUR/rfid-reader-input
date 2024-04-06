@@ -175,9 +175,9 @@
 <br>
 <br>
 
-  <!-------------------------------------------------->
+<!-------------------------------------------------->
 <!------------------------------------CODE EXAMPLE -->
- <!-------------------------------------------------->
+<!-------------------------------------------------->
 # Code Example
 
   <!-------------------------------------------------
@@ -190,6 +190,9 @@
  
 > [!NOTE]
 > Structured code in ViteJS <img  alt="skills"  height="30" src="https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/32fd8a60-654d-4b60-8f31-19f5cc715ca1"> 
+
+
+#### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg"><a/>  <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
 
 ### Code 
 
@@ -258,3 +261,11 @@ function handleCloseRFID() {
 export default App
 
 ```
+
+
+
+**Love rfid-reader-input? Give our repo a star ⭐ ⬆️.**
+
+`by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/)
+
+`buy rfid reader device`: [rfid reader device]([https://www.linkedin.com/in/digoarthur/](https://pt.aliexpress.com/item/1005006223111716.html?spm=a2g0o.productlist.main.9.298dlG1PlG1Pcy&algo_pvid=1cdd1d61-b417-4c92-adad-21983a1f853c&aem_p4p_detail=2024040608001417840825173963440008723047&algo_exp_id=1cdd1d61-b417-4c92-adad-21983a1f853c-4&pdp_npi=4%40dis%21EUR%2111.30%218.47%21%21%2186.59%2164.94%21%402101e62517124156146654903ebec3%2112000036353233564%21sea%21PT%21738581998%21&curPageLogUid=OYyStQk6kG9U&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=2024040608001417840825173963440008723047_1))
