@@ -1,48 +1,57 @@
-import { useEffect, useRef} from "react";
+import { useEffect, useRef } from "react";
 import React from "react";
-import { RiRfidLine } from "react-icons/ri";
-import { IoCloseOutline } from "react-icons/io5";
 import { css } from './styles';
 
 type CardReaderProps = {
-    open: boolean
-    setOpenCardWindow: (open: boolean) => void;
-    _handleCodeCardRFID: (code: string) => void
+    isOpen: boolean
+    onRequestClose: () => void;
+    handleCodeCardRFID: (code: string) => void
+    textTitle?: string
+    textBody?: string
 }
 
 
-export function RFIDReaderInput({ open, setOpenCardWindow, _handleCodeCardRFID }: CardReaderProps) {
+export function RFIDReaderInput({ isOpen, onRequestClose, handleCodeCardRFID, textTitle = 'Identificação RFID', textBody = 'Aproxime o cartão' }: CardReaderProps) {
 
     const inputRef = useRef<HTMLInputElement>(null)
+    
+    const autoSelectInput = () => {
+        inputRef.current?.select();
+    }
+
     useEffect(() => {
-        const teste = () => {
-            inputRef.current?.select();
-        }
 
-        teste()
+        autoSelectInput()
 
-    }, [open])
+    }, [isOpen])
 
     return (
         <>
             <style>{css}</style>
-            <div className={`${open ? 'invisible' : ''}`}>
-                <div className='opacityBg' />
-                <div className='card'>
+            <div className={`${isOpen ? '' : 'container'}`}>
+                <div onClick={() => autoSelectInput()} className='opacityBg' />
+                <div className='cardRFIDReader'>
 
                     <div className="titleCard">
-                        Identificação RFID <button onClick={() => { setOpenCardWindow(!open) }} className="z-50" ><IoCloseOutline size={25} /></button>
+                        {textTitle} <button onClick={() => { onRequestClose() }} className="closeButton" ><img style={{height:'20px'}}  src="    https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/58e4aa2c-8278-4963-9e6a-2fdd89be851e" /></button>
                     </div>
-                    <div className="bodyCard"> Aproxime o cartão <RiRfidLine size={50} /></div>
+                    <div className="bodyCard"> {textBody}<img style={{height:'34px'}}  src="https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/1dd6130e-33d9-4f56-8d98-b3a33a0c30c2" /></div>
                     <div>
-                        <input onChange={(event) => {
+                        <input
+                     
+                            onClick={() => autoSelectInput()} onChange={(event) => {
+                                setTimeout(() => {
+                                    const value = event.target.value
+                                    if (value.length < 10){
+                                        autoSelectInput()
+                                    }else{
+                                        handleCodeCardRFID(event.target.value)
+                                        onRequestClose()
+                                    }
+                                      
+                                }, 180)
 
-                            setTimeout(() => {
-                                _handleCodeCardRFID(event.target.value)
-                                setOpenCardWindow(!open)
-                            }, 180)
-
-                        }} type="number" ref={inputRef} className='inputCard' />
+                            }} type="number" ref={inputRef} className='inputCard' />
 
                     </div>
 
