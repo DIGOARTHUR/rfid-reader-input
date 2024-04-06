@@ -10,7 +10,7 @@
   <!-------------------------------------------------->
  <!---------------------PROJECT ICON-->
   <!-------------------------------------------------->
-  <img src="https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/3dfdfcfe-f0d5-46b6-a602-e1354ffd7658" alt="RFID-logo" width="150px" height="150px"/>
+  <img src="https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/a6367195-e847-4157-bffb-5932d73bd076" alt="RFID-logo" width="150px" height="150px"/>
   <br>
    <br>
   <i>Capture your RFID reading from your React application in a practical and easy way!</i>
@@ -115,6 +115,12 @@
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  --> 
 > This library has a React component, <RFIDReaderInput/>, to facilitate data entry while reading from your RFID device. Use in your Dashboard systems to control presence, record processes linked to people, etc.
 
+## Advantages
+
+- Component already made. Install, import and use.
+- Void capturing digits from the keyboard.
+- Intuitive and customizable layout
+
 
 |                             RFIDReaderInput                             |
 | :-------------------------------------------------------------------: |
@@ -122,11 +128,7 @@
 
 
 
-## Advantages
 
-- Component already made. Install, import and use.
-- Void capturing digits from the keyboard.
-- Intuitive and customizable layout
 
 
   <br>
@@ -159,7 +161,7 @@
 
 #### Props
 
-> [!NOTE]
+> [!IMPORTANT]
 > For the component to work, insert the properties correctly. You can follow the code example.
 
 - (_mandatory_) `open`  < boolean > : here a variable with the value of false or true is inserted to open the Input. 
@@ -178,19 +180,26 @@
  <!-------------------------------------------------->
 # Code Example
 
+  <!-------------------------------------------------
 ### Download Template
 
 ```npm
 
 ```
+ <!-------------------------------------------------->
+ 
+> [!NOTE]
+> Structured code in ViteJS <img  alt="skills"  height="30" src="https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/32fd8a60-654d-4b60-8f31-19f5cc715ca1"> 
 
-### Code
+### Code 
 
 ```jsx    
 import { useState } from 'react'
 import './App.css'
 
+import { RFIDReaderInput } from 'rfid-reader-input';
 function App() {
+  //CSS EFFECT
   const [isHover, setIsHover] = useState(false);
 
   const handleMouseEnter = () => {
@@ -204,9 +213,24 @@ function App() {
     filter: isHover ? 'drop-shadow(0 0 5em #617874ee)' : ''
   };
 
+
+  //RFIDReaderInput State
+  const [serialCard, setSerialcard] = useState('');
+  const [openCardReaderWindow, setOpenCardReaderWindow] = useState<boolean>(false)
+
+  function handleOpenRFID() { 
+  
+    setOpenCardReaderWindow(true);
+}
+
+function handleCloseRFID() {
+    setOpenCardReaderWindow(false);
+  }
+
   return (
     <>
       <div>
+      <RFIDReaderInput isOpen={openCardReaderWindow} onRequestClose={handleCloseRFID} handleCodeCardRFID={ setSerialcard} />   
         <a href="https://github.com/DIGOARTHUR/rfid-reader-input" target="_blank">
           <img src='https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/a6367195-e847-4157-bffb-5932d73bd076'
             onMouseEnter={handleMouseEnter}
@@ -215,9 +239,9 @@ function App() {
           />
         </a>
       </div>
-      <h1>&lsaquo; RFIDReaderInput 	/&rsaquo;</h1>
+      <h1>{serialCard?serialCard:'‹ RFIDReaderInput 	/›'}</h1>
       <div className="card">
-        <button >
+        <button  onClick={handleOpenRFID}>
           Open RFIDReaderInput
         </button>
         <p>
@@ -233,8 +257,4 @@ function App() {
 
 export default App
 
-```
-### Reset CSS
-
-```css
 ```
