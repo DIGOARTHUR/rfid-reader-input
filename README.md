@@ -195,7 +195,7 @@
 
 
 
-[stackblitz.com/github/digoarthur/template-rfid-reader-input](stackblitz.com/github/digoarthur/template-rfid-reader-input)
+[https://template-rfid-reader-input.vercel.app](https://template-rfid-reader-input.vercel.app)
 
 
 ### Code 
