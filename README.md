@@ -1,4 +1,6 @@
-
+<!---
+doc: update README.md
+---->
 
  <!-------------------------------------------------->
 <!------------------------------------ PROJECT BANNER-->
@@ -13,7 +15,7 @@
   <img src="https://github.com/DIGOARTHUR/rfid-reader-input/assets/59892368/a6367195-e847-4157-bffb-5932d73bd076" alt="RFID-logo" width="150px" height="150px"/>
   <br>
    <br>
-  <i>Capture your RFID reading from your React application in a practical and easy way!</i>
+  <i>Capture RFID reading from Your React app in an elegant and restricted way!!</i>
   <br>
 
 </p>
